@@ -43,3 +43,6 @@ EOF
 
 echo "done"
 
+#to have github configured git remote set-url origin https://<access-token>@github.com/<usename/<repo-name>.git
+
+
