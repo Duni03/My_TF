@@ -1,4 +1,4 @@
 #!/bin/bash
-apt-get update
-apt-get install nginx -y
-echo "Hi Nihal" >/var/www/html/index.nginx-debian.html
+echo "Copying the fils"
+sudo apt install -y git
+git clone https://github.com/Duni03/My_TF.git
