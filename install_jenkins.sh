@@ -1,6 +1,6 @@
 sudo apt update
 
-sudo apt install default-jdk
+sudo apt install default-jdk -y
 
 check for background update services $ ps aux | grep -i apt
 
@@ -10,7 +10,7 @@ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sour
 
 sudo apt update
 
-sudo apt install jenkins
+sudo apt install jenkins -y
 
 sudo systemctl enable jenkins
 
@@ -22,3 +22,5 @@ sudo ufw allow OpenSSH sudo ufw enable
 sudo ufw enable
 
 sudo ufw status
+
+cat /var/lib/jenkins/secrets/initialAdminPassword
