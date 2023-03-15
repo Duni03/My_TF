@@ -40,3 +40,11 @@ EOF
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
 docker --help
+
+host="unix:///var/run/docker.sock"
+
+sudo groupadd docker
+
+sudo usermod -aG docker $USER
+
+newgrp docker
